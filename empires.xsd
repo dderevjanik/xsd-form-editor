@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empire">
+        <xs:annotation>
+            <xs:documentation>Empire</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ornament" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>Ornament</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:attribute name="type" type="enum_ornament" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="border" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Border</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="edge" type="edge_type" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:attribute name="density" type="xs:int" default="50"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="cities" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Cities</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="city" type="empire_city_type" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation>City</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="invasion_paths" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Invansion Paths</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="path" type="invasion_path_type" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="distant_battle_paths" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Distant Battle Paths</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="path" type="distant_battle_path_type" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="version" type="xs:int" use="required">
+                <xs:annotation>
+                    <xs:documentation>Empire Version</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="show_ireland" type="xs:boolean"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- Types -->
+    <xs:complexType name="edge_type">
+        <xs:attribute name="x" type="xs:int" use="required" />
+        <xs:attribute name="y" type="xs:int" use="required" />
+        <xs:attribute name="hidden" type="xs:boolean" />
+    </xs:complexType>
+    <xs:complexType name="empire_city_type">
+        <xs:all>
+            <xs:element name="buys" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Buys</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="resource" type="resource_type" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="sells" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Sells</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="resource" type="resource_type" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="trade_points" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Trade Points</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="point" type="trade_point" maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>Point</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+        <xs:attribute name="name" type="xs:string" use="required" />
+        <xs:attribute name="x" type="xs:int" use="required" />
+        <xs:attribute name="y" type="xs:int" use="required" />
+        <xs:attribute name="type" type="enum_empire_city_type" />
+        <xs:attribute name="trade_route_cost" type="xs:int" default="500"/> <!-- 0> -->
+        <xs:attribute name="trade_route_type" type="enum_trade_type" />
+    </xs:complexType>
+    <xs:complexType name="invasion_path_type">
+        <xs:sequence>
+            <xs:element name="battle" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Battle</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:attribute name="x" type="xs:int" use="required" />
+                    <xs:attribute name="y" type="xs:int" use="required" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="distant_battle_path_type">
+        <xs:sequence>
+            <xs:element name="waypoint" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Waypoint</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:attribute name="num_months" type="xs:int" use="required" />
+                    <xs:attribute name="x" type="xs:int" use="required" />
+                    <xs:attribute name="y" type="xs:int" use="required" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="type" type="xs:string" use="required" /> <!-- "roman" || "enemy" -->
+        <xs:attribute name="start_x" type="xs:int" use="required" />
+        <xs:attribute name="start_y" type="xs:int" use="required" />
+    </xs:complexType>
+    <xs:complexType name="resource_type">
+        <xs:attribute name="type" type="enum_resource" use="required" />
+        <xs:attribute name="amount" type="xs:int" default="1"/>
+    </xs:complexType>
+    <xs:complexType name="trade_point">
+        <xs:attribute name="x" type="xs:int" use="required" />
+        <xs:attribute name="y" type="xs:int" use="required" />
+    </xs:complexType>
+    <!-- Enum Types -->
+    <xs:simpleType name="enum_ornament">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="The Stonehenge"/>
+            <xs:enumeration value="Gallic Wheat"/>
+            <xs:enumeration value="The Pyrenees"/>
+            <xs:enumeration value="Iberian Aqueduct"/>
+            <xs:enumeration value="Triumphal Arch"/>
+            <xs:enumeration value="West Desert Wheat"/>
+            <xs:enumeration value="Lighthouse of Alexandria"/>
+            <xs:enumeration value="West Desert Palm Trees"/>
+            <xs:enumeration value="Trade Ship"/>
+            <xs:enumeration value="Waterside Palm Trees"/>
+            <xs:enumeration value="Colosseum|The Colosseum"/>
+            <xs:enumeration value="The Alps"/>
+            <xs:enumeration value="Roman Tree"/>
+            <xs:enumeration value="Greek Mountain Range"/>
+            <xs:enumeration value="The Parthenon"/>
+            <xs:enumeration value="The Pyramids"/>
+            <xs:enumeration value="The Hagia Sophia"/>
+            <xs:enumeration value="East Desert Palm Trees"/>
+            <xs:enumeration value="East Desert Wheat"/>
+            <xs:enumeration value="Trade Camel"/>
+            <xs:enumeration value="Mount Etna"/>
+            <xs:enumeration value="Colossus of Rhodes"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="enum_empire_city_type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ours" />
+            <xs:enumeration value="roman" />
+            <xs:enumeration value="distant" />
+            <xs:enumeration value="trade" />
+            <xs:enumeration value="vulnerable" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="enum_trade_type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="land" />
+            <xs:enumeration value="sea" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="enum_resource">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="wheat" />
+            <xs:enumeration value="vegetables" />
+            <xs:enumeration value="fruit" />
+            <xs:enumeration value="olives" />
+            <xs:enumeration value="vines" />
+            <xs:enumeration value="meat" />
+            <xs:enumeration value="fish" />
+            <xs:enumeration value="wine" />
+            <xs:enumeration value="oil" />
+            <xs:enumeration value="iron" />
+            <xs:enumeration value="gold" />
+            <xs:enumeration value="clay" />
+            <xs:enumeration value="marble" />
+            <xs:enumeration value="weapons" />
+            <xs:enumeration value="furniture" />
+            <xs:enumeration value="pottery" />
+            <xs:enumeration value="timber"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
