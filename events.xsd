@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="events">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="event" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:all>
+                            <!-- Conditions -->
+                            <xs:element name="conditions" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="building_count_active" type="condition_building_count_active_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="count_own_troops" type="condition_count_own_troops_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="favor" type="condition_favor_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="money" type="condition_money_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="savings" type="condition_savings_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="difficulty" type="condition_difficulty_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="time" type="condition_time_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="city_population" type="condition_city_population_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="population_unemployed" type="condition_population_unemployed_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="request_is_ongoing" type="condition_request_is_ongoing_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="rome_wages" type="condition_rome_wages_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="stats_health" type="condition_stats_health_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="stats_culture" type="condition_stats_culture_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="stats_favor" type="condition_stats_favor_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="stats_peace" type="condition_stats_peace_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="stats_prosperity" type="condition_stats_prosperity_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="trade_sell_price" type="condition_trade_sell_price_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- Actions -->
+                            <xs:element name="actions" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="change_allowed_buildings" type="action_change_allowed_buildings_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="city_health" type="action_city_health_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="empire_map_convert_future_trade_city" type="action_empire_map_convert_future_trade_city_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="favor_add" type="action_favor_add_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="gladiator_revolt" type="action_gladiator_revolt_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="money_add" type="action_money_add_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="change_resource_produced" type="action_change_resource_produced_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="request_immediately_start" type="action_request_immediately_start_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="change_rome_wages" type="action_change_rome_wages_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="savings_add" type="action_savings_add_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="send_standard_message" type="action_send_standard_message_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="trade_price_adjust" type="action_trade_price_adjust_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="trade_route_amount" type="action_trade_route_amount_type" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xs:element name="trade_problems_land" type="action_trade_problems_land_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="trade_problems_sea" type="action_trade_problems_sea_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                        <xs:element name="trade_price_set" type="action_trade_price_set_type" minOccurs="0" maxOccurs="unbounded"/>  
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:all>
+                        <!-- Event Params -->
+                        <xs:attribute name="repeat_months_min" type="xs:integer" use="optional" />
+                        <xs:attribute name="repeat_months_max" type="xs:integer" use="optional" />
+                        <xs:attribute name="max_number_of_repeats" type="xs:integer" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <!-- Events Params -->
+            <xs:attribute name="version" type="xs:int" default="1"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- Types -->
+    <xs:complexType name="condition_building_count_active_type">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" />
+        <xs:attribute name="building" type="enum_building_type" />
+    </xs:complexType>
+    <xs:complexType name="condition_count_own_troops_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:100 -->
+        <xs:attribute name="in_city_only" type="xs:boolean" />
+    </xs:complexType>
+    <xs:complexType name="condition_favor_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:100 -->
+    </xs:complexType>
+    <xs:complexType name="condition_money_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- -10000:1000000000 -->
+    </xs:complexType>
+    <xs:complexType name="condition_savings_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:1000000000 -->
+    </xs:complexType>
+    <xs:complexType name="condition_difficulty_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="enum_difficulty" /> <!-- or by 0:4 -->
+    </xs:complexType>
+    <xs:complexType name="condition_time_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="min" type="xs:int" /> <!-- 0> -->
+        <xs:attribute name="max" type="xs:int" /> <!-- min or more -->
+    </xs:complexType>
+    <xs:complexType name="condition_city_population_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:10000000 -->
+        <xs:attribute name="class" type="enum_population_class" />
+    </xs:complexType>
+    <xs:complexType name="condition_population_unemployed_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="percentage" type="xs:boolean" /> 
+        <xs:attribute name="value" type="enum_population_class" /> <!-- 0:100 -->
+    </xs:complexType>
+    <xs:complexType name="condition_request_is_ongoing_type">
+        <xs:attribute name="request_id" type="xs:int" /> <!-- 0:19 -->
+        <xs:attribute name="check_for_ongoing" type="xs:boolean" /> 
+    </xs:complexType>
+    <xs:complexType name="condition_rome_wages_type">
+        <xs:attribute name="check" type="enum_check" /> 
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:10000 -->
+    </xs:complexType>
+    <xs:complexType name="condition_stats_health_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:100 -->
+    </xs:complexType>
+    <xs:complexType name="condition_stats_culture_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:100 -->
+    </xs:complexType>
+    <xs:complexType name="condition_stats_favor_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:100 -->
+    </xs:complexType>
+    <xs:complexType name="condition_stats_peace_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:100 -->
+    </xs:complexType>
+    <xs:complexType name="condition_stats_prosperity_type">
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:100 -->
+    </xs:complexType>
+    <xs:complexType name="condition_trade_sell_price_type">
+        <xs:attribute name="resource" type="enum_resource" />
+        <xs:attribute name="check" type="enum_check" />
+        <xs:attribute name="value" type="xs:int" /> <!-- 0:1000000000 -->
+    </xs:complexType>
+    <!-- Action Types -->
+    <xs:complexType name="action_change_allowed_buildings_type">
+        <xs:attribute name="building" type="enum_buildings" />
+        <xs:attribute name="value" type="xs:boolean" />
+    </xs:complexType>
+    <xs:complexType name="action_city_health_type">
+        <xs:attribute name="set_to_value" type="xs:boolean" />
+        <xs:attribute name="value" type="xs:int" /> <!-- -100:100 -->
+        <xs:attribute name="min" type="xs:int" /> <!-- -100:100 -->
+        <xs:attribute name="max" type="xs:int" /> <!-- -100:100 -->
+    </xs:complexType>
+    <xs:complexType name="action_empire_map_convert_future_trade_city_type">
+        <xs:attribute name="target_city" type="xs:string" />
+        <xs:attribute name="future_trade" type="xs:string" />
+        <xs:attribute name="show_message" type="xs:boolean" />
+    </xs:complexType>
+    <xs:complexType name="action_favor_add_type">
+        <xs:attribute name="value" type="xs:int" /> <!-- -100:100 -->
+    </xs:complexType>
+    <xs:complexType name="action_gladiator_revolt_type">
+    </xs:complexType>
+    <xs:complexType name="action_money_add_type">
+        <xs:attribute name="value" type="xs:int" /> <!-- -10000000:10000000 -->
+    </xs:complexType>
+    <xs:complexType name="action_change_resource_produced_type">
+        <xs:attribute name="resource" type="enum_resource" />
+        <xs:attribute name="produced" type="xs:boolean" />
+    </xs:complexType>
+    <xs:complexType name="action_request_immediately_start_type">
+        <xs:attribute name="request_id" type="xs:int" /> <!-- 0:19 -->
+    </xs:complexType>
+    <xs:complexType name="action_change_rome_wages_type">
+        <xs:attribute name="set_to_value" type="xs:boolean" />
+        <xs:attribute name="min" type="xs:int" /> <!-- -10000:10000 -->
+        <xs:attribute name="max" type="xs:int" /> <!-- -10000:10000 -->
+    </xs:complexType>
+    <xs:complexType name="action_savings_add_type">
+        <xs:attribute name="set_to_value" type="xs:boolean" />
+        <xs:attribute name="min" type="xs:int" /> <!-- -10000000:10000000 -->
+        <xs:attribute name="max" type="xs:int" /> <!-- -10000000:10000000 -->
+    </xs:complexType>
+    <xs:complexType name="action_send_standard_message_type">
+        <xs:attribute name="text_id" type="xs:int" />
+    </xs:complexType>
+    <xs:complexType name="action_trade_price_adjust_type">
+        <xs:attribute name="resource" type="enum_resource" />
+        <xs:attribute name="amount" type="xs:int" /> <!-- -10000:10000 -->
+        <xs:attribute name="show_message" type="xs:boolean" />
+    </xs:complexType>
+    <xs:complexType name="action_trade_route_amount_type">
+        <xs:attribute name="target_city" type="xs:string" />
+        <xs:attribute name="resource" type="enum_resource" />
+        <xs:attribute name="amount" type="xs:int" /> <!-- -10000:10000 -->
+        <xs:attribute name="show_message" type="xs:boolean" />
+    </xs:complexType>
+    <xs:complexType name="action_trade_problems_land_type">
+        <xs:attribute name="duration" type="xs:int" /> <!-- 0:10000 -->
+    </xs:complexType>
+    <xs:complexType name="action_trade_problems_sea_type">
+        <xs:attribute name="duration" type="xs:int" /> <!-- 0:10000 -->
+    </xs:complexType>
+    <xs:complexType name="action_trade_price_set_type">
+        <xs:attribute name="resource" type="enum_resource" />
+        <xs:attribute name="amount" type="xs:int" /> <!-- 0:100000 -->
+        <xs:attribute name="set_buy_price" type="xs:boolean" />
+        <xs:attribute name="show_message" type="xs:boolean" />
+    </xs:complexType>
+    <!-- Enum Types -->
+    <xs:simpleType name="enum_check">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="lte" />
+            <xs:enumeration value="eq" />
+            <xs:enumeration value="gte" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="enum_building_type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="all_farms" />
+            <xs:enumeration value="all_raw_materials" />
+            <xs:enumeration value="all_workshops" />
+            <xs:enumeration value="all_small_temples" />
+            <xs:enumeration value="all_large_temples" />
+            <xs:enumeration value="all_grand_temples" />
+            <xs:enumeration value="all_trees" />
+            <xs:enumeration value="all_paths" />
+            <xs:enumeration value="all_parks" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="enum_difficulty">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="very_easy" />
+            <xs:enumeration value="easy" />
+            <xs:enumeration value="normal" />
+            <xs:enumeration value="hard" />
+            <xs:enumeration value="very_hard" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="enum_population_class">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="all" />
+            <xs:enumeration value="patrician" />
+            <xs:enumeration value="plebeian" />
+            <xs:enumeration value="slums" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="enum_resource">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="wheat" />
+            <xs:enumeration value="vegetables" />
+            <xs:enumeration value="fruit" />
+            <xs:enumeration value="olives" />
+            <xs:enumeration value="vines" />
+            <xs:enumeration value="meat" />
+            <xs:enumeration value="fish" />
+            <xs:enumeration value="wine" />
+            <xs:enumeration value="oil" />
+            <xs:enumeration value="iron" />
+            <xs:enumeration value="gold" />
+            <xs:enumeration value="clay" />
+            <xs:enumeration value="marble" />
+            <xs:enumeration value="weapons" />
+            <xs:enumeration value="furniture" />
+            <xs:enumeration value="pottery" />
+            <xs:enumeration value="timber"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="enum_buildings">
+        <xs:restriction base="xs:string">
+            <!-- TODO: Check -->
+            <xs:enumeration value="none" />
+            <xs:enumeration value="farms" />
+            <xs:enumeration value="raw_materials" />
+            <xs:enumeration value="workshops" />
+            <xs:enumeration value="road" />
+            <xs:enumeration value="wall" />
+            <xs:enumeration value="aqueduct" />
+            <xs:enumeration value="housing" />
+            <xs:enumeration value="amphitheater" />
+            <xs:enumeration value="theater" />
+            <xs:enumeration value="hippodrome" />
+            <xs:enumeration value="colosseum" />
+            <xs:enumeration value="gladiator_school" />
+            <xs:enumeration value="lion_house" />
+            <xs:enumeration value="actor_colony" />
+            <xs:enumeration value="chariot_maker" />
+            <xs:enumeration value="gardens" />
+            <xs:enumeration value="plaza" />
+            <xs:enumeration value="statues" />
+            <xs:enumeration value="doctor" />
+            <xs:enumeration value="hospital" />
+            <xs:enumeration value="bathhouse" />
+            <xs:enumeration value="barber" />
+            <xs:enumeration value="school" />
+            <xs:enumeration value="academy" />
+            <xs:enumeration value="library" />
+            <xs:enumeration value="prefecture" />
+            <xs:enumeration value="fort" />
+            <xs:enumeration value="gatehouse" />
+            <xs:enumeration value="tower" />
+            <xs:enumeration value="small_temples" />
+            <xs:enumeration value="large_temples" />
+            <xs:enumeration value="market" />
+            <xs:enumeration value="granary" />
+            <xs:enumeration value="warehouse" />
+            <xs:enumeration value="triumphal_arch" />
+            <xs:enumeration value="dock" />
+            <xs:enumeration value="wharf" />
+            <xs:enumeration value="governor_home" />
+            <xs:enumeration value="engineers_post" />
+            <xs:enumeration value="senate" />
+            <xs:enumeration value="forum" />
+            <xs:enumeration value="well" />
+            <xs:enumeration value="oracle" />
+            <xs:enumeration value="mission_post" />
+            <xs:enumeration value="bridge" />
+            <xs:enumeration value="barracks" />
+            <xs:enumeration value="military_academy" />
+            <xs:enumeration value="monuments" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
