@@ -1,0 +1,598 @@
+{
+  "name": {
+    "namespaceURI": "",
+    "localPart": "empire",
+    "prefix": "",
+    "key": "empire",
+    "string": "empire"
+  },
+  "value": {
+    "TYPE_NAME": "generated.Empire",
+    "version": 1,
+    "cities": {
+      "TYPE_NAME": "generated.Empire.Cities",
+      "city": [
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Hierosolyma",
+          "x": 1698,
+          "y": 875,
+          "type": "ours",
+          "sells": {
+            "TYPE_NAME": "generated.EmpireCityType.Sells",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "wheat"
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "fruit"
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "clay"
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "wine"
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "oil"
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "weapons"
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "furniture"
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "pottery"
+              }
+            ]
+          }
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Ephesus",
+          "x": 1337,
+          "y": 678,
+          "tradeRouteCost": 1300,
+          "buys": {
+            "TYPE_NAME": "generated.EmpireCityType.Buys",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "wheat",
+                "amount": 25
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "pottery",
+                "amount": 40
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "weapons",
+                "amount": 15
+              }
+            ]
+          },
+          "sells": {
+            "TYPE_NAME": "generated.EmpireCityType.Sells",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "timber",
+                "amount": 25
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "vines",
+                "amount": 25
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "marble",
+                "amount": 15
+              }
+            ]
+          },
+          "tradePoints": {
+            "TYPE_NAME": "generated.EmpireCityType.TradePoints",
+            "point": [
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1693,
+                "y": 881
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1702,
+                "y": 795
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1713,
+                "y": 774
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1672,
+                "y": 736
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1616,
+                "y": 787
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1560,
+                "y": 795
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1525,
+                "y": 772
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1490,
+                "y": 764
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1486,
+                "y": 740
+              }
+            ]
+          }
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Antiocha",
+          "x": 1718,
+          "y": 755,
+          "tradeRouteCost": 400,
+          "buys": {
+            "TYPE_NAME": "generated.EmpireCityType.Buys",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "meat",
+                "amount": 25
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "pottery",
+                "amount": 15
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "weapons",
+                "amount": 25
+              }
+            ]
+          },
+          "sells": {
+            "TYPE_NAME": "generated.EmpireCityType.Sells",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "wheat",
+                "amount": 25
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "olives",
+                "amount": 25
+              }
+            ]
+          },
+          "tradePoints": {
+            "TYPE_NAME": "generated.EmpireCityType.TradePoints",
+            "point": [
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1710,
+                "y": 865
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1710,
+                "y": 865
+              }
+            ]
+          }
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Heliopolis",
+          "x": 1739,
+          "y": 785,
+          "tradeRouteCost": 300,
+          "buys": {
+            "TYPE_NAME": "generated.EmpireCityType.Buys",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "fruit",
+                "amount": 25
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "pottery",
+                "amount": 15
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "weapons",
+                "amount": 15
+              }
+            ]
+          },
+          "sells": {
+            "TYPE_NAME": "generated.EmpireCityType.Sells",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "wheat",
+                "amount": 25
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "meat",
+                "amount": 25
+              }
+            ]
+          },
+          "tradePoints": {
+            "TYPE_NAME": "generated.EmpireCityType.TradePoints",
+            "point": [
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1730,
+                "y": 883
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1730,
+                "y": 883
+              }
+            ]
+          }
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Damascus",
+          "x": 1742,
+          "y": 815,
+          "tradeRouteCost": 200,
+          "buys": {
+            "TYPE_NAME": "generated.EmpireCityType.Buys",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "furniture",
+                "amount": 15
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "oil",
+                "amount": 15
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "wine",
+                "amount": 15
+              }
+            ]
+          },
+          "sells": {
+            "TYPE_NAME": "generated.EmpireCityType.Sells",
+            "resource": [
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "clay",
+                "amount": 25
+              },
+              {
+                "TYPE_NAME": "generated.ResourceType",
+                "type": "iron",
+                "amount": 25
+              }
+            ]
+          },
+          "tradePoints": {
+            "TYPE_NAME": "generated.EmpireCityType.TradePoints",
+            "point": [
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1760,
+                "y": 905
+              },
+              {
+                "TYPE_NAME": "generated.TradePoint",
+                "x": 1760,
+                "y": 905
+              }
+            ]
+          }
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Toletum",
+          "x": 114,
+          "y": 603,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Tingis",
+          "x": 115,
+          "y": 794,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Carthago Nova",
+          "x": 225,
+          "y": 728,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Valentia",
+          "x": 277,
+          "y": 617,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Tarraco",
+          "x": 382,
+          "y": 494,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Mediolanum",
+          "x": 614,
+          "y": 310,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Carthago",
+          "x": 656,
+          "y": 735,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Capua",
+          "x": 802,
+          "y": 517,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Syracusae",
+          "x": 835,
+          "y": 733,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Tarentum",
+          "x": 905,
+          "y": 558,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Brundisium",
+          "x": 945,
+          "y": 543,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Leptis Magna",
+          "x": 835,
+          "y": 894,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Cyrene",
+          "x": 1128,
+          "y": 883,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Corinthus",
+          "x": 1133,
+          "y": 681,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Athenae",
+          "x": 1172,
+          "y": 659,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Pergamum",
+          "x": 1366,
+          "y": 613,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Miletus",
+          "x": 1353,
+          "y": 712,
+          "type": "roman"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Sinope",
+          "x": 1625,
+          "y": 491,
+          "type": "distant"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Tarsus",
+          "x": 1657,
+          "y": 733,
+          "type": "vulnerable"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Volubilis",
+          "x": 61,
+          "y": 903,
+          "type": "distant"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Byzantium",
+          "x": 1380,
+          "y": 521,
+          "type": "distant"
+        },
+        {
+          "TYPE_NAME": "generated.EmpireCityType",
+          "name": "Alexandria",
+          "x": 1508,
+          "y": 929,
+          "type": "distant"
+        }
+      ]
+    },
+    "invasionPaths": {
+      "TYPE_NAME": "generated.Empire.InvasionPaths",
+      "path": [
+        {
+          "TYPE_NAME": "generated.InvasionPathType",
+          "battle": [
+            {
+              "TYPE_NAME": "generated.InvasionPathType.Battle",
+              "x": 1770,
+              "y": 910
+            },
+            {
+              "TYPE_NAME": "generated.InvasionPathType.Battle",
+              "x": 1803,
+              "y": 907
+            },
+            {
+              "TYPE_NAME": "generated.InvasionPathType.Battle",
+              "x": 1856,
+              "y": 911
+            }
+          ]
+        },
+        {
+          "TYPE_NAME": "generated.InvasionPathType",
+          "battle": [
+            {
+              "TYPE_NAME": "generated.InvasionPathType.Battle",
+              "x": 1784,
+              "y": 912
+            },
+            {
+              "TYPE_NAME": "generated.InvasionPathType.Battle",
+              "x": 1811,
+              "y": 924
+            },
+            {
+              "TYPE_NAME": "generated.InvasionPathType.Battle",
+              "x": 1889,
+              "y": 936
+            }
+          ]
+        }
+      ]
+    },
+    "distantBattlePaths": {
+      "TYPE_NAME": "generated.Empire.DistantBattlePaths",
+      "path": [
+        {
+          "TYPE_NAME": "generated.DistantBattlePathType",
+          "type": "roman",
+          "startX": 1692,
+          "startY": 902,
+          "waypoint": [
+            {
+              "TYPE_NAME": "generated.DistantBattlePathType.Waypoint",
+              "numMonths": 7,
+              "x": 1697,
+              "y": 770
+            },
+            {
+              "TYPE_NAME": "generated.DistantBattlePathType.Waypoint",
+              "numMonths": 1,
+              "x": 1705,
+              "y": 740
+            },
+            {
+              "TYPE_NAME": "generated.DistantBattlePathType.Waypoint",
+              "numMonths": 1,
+              "x": 1657,
+              "y": 750
+            },
+            {
+              "TYPE_NAME": "generated.DistantBattlePathType.Waypoint",
+              "numMonths": 1,
+              "x": 1657,
+              "y": 732
+            }
+          ]
+        },
+        {
+          "TYPE_NAME": "generated.DistantBattlePathType",
+          "type": "enemy",
+          "startX": 1814,
+          "startY": 740,
+          "waypoint": [
+            {
+              "TYPE_NAME": "generated.DistantBattlePathType.Waypoint",
+              "numMonths": 4,
+              "x": 1780,
+              "y": 750
+            },
+            {
+              "TYPE_NAME": "generated.DistantBattlePathType.Waypoint",
+              "numMonths": 4,
+              "x": 1730,
+              "y": 730
+            },
+            {
+              "TYPE_NAME": "generated.DistantBattlePathType.Waypoint",
+              "numMonths": 4,
+              "x": 1700,
+              "y": 720
+            },
+            {
+              "TYPE_NAME": "generated.DistantBattlePathType.Waypoint",
+              "numMonths": 1,
+              "x": 1657,
+              "y": 732
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

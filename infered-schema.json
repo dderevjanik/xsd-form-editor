@@ -1,0 +1,2263 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "object",
+        "properties": {
+          "namespaceURI": {
+            "type": "string"
+          },
+          "localPart": {
+            "type": "string"
+          },
+          "prefix": {
+            "type": "string"
+          },
+          "key": {
+            "type": "string"
+          },
+          "string": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "namespaceURI",
+          "localPart",
+          "prefix",
+          "key",
+          "string"
+        ]
+      },
+      "value": {
+        "type": "object",
+        "properties": {
+          "TYPE_NAME": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer"
+          },
+          "cities": {
+            "type": "object",
+            "properties": {
+              "TYPE_NAME": {
+                "type": "string"
+              },
+              "city": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "sells": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type",
+                      "sells"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "tradeRouteCost": {
+                        "type": "integer"
+                      },
+                      "buys": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      },
+                      "sells": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      },
+                      "tradePoints": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "point": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "point"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "tradeRouteCost",
+                      "buys",
+                      "sells",
+                      "tradePoints"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "tradeRouteCost": {
+                        "type": "integer"
+                      },
+                      "buys": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      },
+                      "sells": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      },
+                      "tradePoints": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "point": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "point"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "tradeRouteCost",
+                      "buys",
+                      "sells",
+                      "tradePoints"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "tradeRouteCost": {
+                        "type": "integer"
+                      },
+                      "buys": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      },
+                      "sells": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      },
+                      "tradePoints": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "point": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "point"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "tradeRouteCost",
+                      "buys",
+                      "sells",
+                      "tradePoints"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "tradeRouteCost": {
+                        "type": "integer"
+                      },
+                      "buys": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      },
+                      "sells": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "amount": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "type",
+                                  "amount"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "resource"
+                        ]
+                      },
+                      "tradePoints": {
+                        "type": "object",
+                        "properties": {
+                          "TYPE_NAME": {
+                            "type": "string"
+                          },
+                          "point": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "TYPE_NAME": {
+                                    "type": "string"
+                                  },
+                                  "x": {
+                                    "type": "integer"
+                                  },
+                                  "y": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": [
+                                  "TYPE_NAME",
+                                  "x",
+                                  "y"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "TYPE_NAME",
+                          "point"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "tradeRouteCost",
+                      "buys",
+                      "sells",
+                      "tradePoints"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "integer"
+                      },
+                      "y": {
+                        "type": "integer"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "name",
+                      "x",
+                      "y",
+                      "type"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "TYPE_NAME",
+              "city"
+            ]
+          },
+          "invasionPaths": {
+            "type": "object",
+            "properties": {
+              "TYPE_NAME": {
+                "type": "string"
+              },
+              "path": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "battle": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "x",
+                              "y"
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "battle"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "battle": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "x",
+                              "y"
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "battle"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "TYPE_NAME",
+              "path"
+            ]
+          },
+          "distantBattlePaths": {
+            "type": "object",
+            "properties": {
+              "TYPE_NAME": {
+                "type": "string"
+              },
+              "path": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "startX": {
+                        "type": "integer"
+                      },
+                      "startY": {
+                        "type": "integer"
+                      },
+                      "waypoint": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "numMonths": {
+                                "type": "integer"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "numMonths",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "numMonths": {
+                                "type": "integer"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "numMonths",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "numMonths": {
+                                "type": "integer"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "numMonths",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "numMonths": {
+                                "type": "integer"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "numMonths",
+                              "x",
+                              "y"
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "type",
+                      "startX",
+                      "startY",
+                      "waypoint"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "TYPE_NAME": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "startX": {
+                        "type": "integer"
+                      },
+                      "startY": {
+                        "type": "integer"
+                      },
+                      "waypoint": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "numMonths": {
+                                "type": "integer"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "numMonths",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "numMonths": {
+                                "type": "integer"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "numMonths",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "numMonths": {
+                                "type": "integer"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "numMonths",
+                              "x",
+                              "y"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "TYPE_NAME": {
+                                "type": "string"
+                              },
+                              "numMonths": {
+                                "type": "integer"
+                              },
+                              "x": {
+                                "type": "integer"
+                              },
+                              "y": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "TYPE_NAME",
+                              "numMonths",
+                              "x",
+                              "y"
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "TYPE_NAME",
+                      "type",
+                      "startX",
+                      "startY",
+                      "waypoint"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "TYPE_NAME",
+              "path"
+            ]
+          }
+        },
+        "required": [
+          "TYPE_NAME",
+          "version",
+          "cities",
+          "invasionPaths",
+          "distantBattlePaths"
+        ]
+      }
+    },
+    "required": [
+      "name",
+      "value"
+    ]
+  }

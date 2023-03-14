@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!DOCTYPE empire>
+<empire version="1">
+    <cities>
+        <city name="Hierosolyma" x="1698" y="875" type="ours">
+            <sells>
+                <resource type="wheat"/>
+                <resource type="fruit"/>
+                <resource type="clay"/>
+                <resource type="wine"/>
+                <resource type="oil"/>
+                <resource type="weapons"/>
+                <resource type="furniture"/>    
+                <resource type="pottery"/>
+            </sells>
+        </city>
+        <city name="Ephesus" x="1337" y="678" trade_route_cost="1300">
+            <buys>
+                <resource type="wheat" amount="25"/>
+                <resource type="pottery" amount="40"/>
+                <resource type="weapons" amount="15"/>
+            </buys>
+            <sells>
+                <resource type="timber" amount="25"/>
+                <resource type="vines" amount="25"/>
+                <resource type="marble" amount="15"/>
+            </sells>
+            <trade_points>
+                <point x="1693" y="881"/>
+                <point x="1702" y="795"/>
+                <point x="1713" y="774"/>
+                <point x="1672" y="736"/>
+                <point x="1616" y="787"/>
+                <point x="1560" y="795"/>
+                <point x="1525" y="772"/>
+                <point x="1490" y="764"/>
+                <point x="1486" y="740"/>
+            </trade_points>
+        </city>
+        <city name="Antiocha" x="1718" y="755" trade_route_cost="400">
+            <buys>
+                <resource type="meat" amount="25"/>
+                <resource type="pottery" amount="15"/>
+                <resource type="weapons" amount="25"/>
+            </buys>
+            <sells>
+                <resource type="wheat" amount="25"/>
+                <resource type="olives" amount="25"/>
+            </sells>
+            <trade_points>
+                <point x="1710" y="865"/>
+                <point x="1710" y="865"/>
+            </trade_points>
+        </city>
+        <city name="Heliopolis" x="1739" y="785" trade_route_cost="300">
+            <buys>
+                <resource type="fruit" amount="25"/>
+                <resource type="pottery" amount="15"/>
+                <resource type="weapons" amount="15"/>
+            </buys>
+            <sells>
+                <resource type="wheat" amount="25"/>
+                <resource type="meat" amount="25"/>
+            </sells>
+            <trade_points>
+                <point x="1730" y="883"/>
+                <point x="1730" y="883"/>
+            </trade_points>
+        </city>
+        <city name="Damascus" x="1742" y="815" trade_route_cost="200">
+            <buys>
+                <resource type="furniture" amount="15"/>
+                <resource type="oil" amount="15"/>
+                <resource type="wine" amount="15"/>
+            </buys>
+            <sells>
+                <resource type="clay" amount="25"/>
+                <resource type="iron" amount="25"/>
+            </sells>
+            <trade_points>
+                <point x="1760" y="905"/>
+                <point x="1760" y="905"/>
+            </trade_points>
+        </city>
+        <city name="Toletum" x="114" y="603" type="roman"/>
+        <city name="Tingis" x="115" y="794" type="roman"/>
+        <city name="Carthago Nova" x="225" y="728" type="roman"/>
+        <city name="Valentia" x="277" y="617" type="roman"/>
+        <city name="Tarraco" x="382" y="494" type="roman"/>
+        <city name="Mediolanum" x="614" y="310" type="roman"/>
+        <city name="Carthago" x="656" y="735" type="roman"/>
+        <city name="Capua" x="802" y="517" type="roman"/>
+        <city name="Syracusae" x="835" y="733" type="roman"/>
+        <city name="Tarentum" x="905" y="558" type="roman"/>
+        <city name="Brundisium" x="945" y="543" type="roman"/>
+        <city name="Leptis Magna" x="835" y="894" type="roman"/>
+        <city name="Cyrene" x="1128" y="883" type="roman"/>
+        <city name="Corinthus" x="1133" y="681" type="roman"/>
+        <city name="Athenae" x="1172" y="659" type="roman"/>
+        <city name="Pergamum" x="1366" y="613" type="roman"/>
+        <city name="Miletus" x="1353" y="712" type="roman"/>
+        <city name="Sinope" x="1625" y="491" type="distant"/>
+        <city name="Tarsus" x="1657" y="733" type="vulnerable"/>
+        <city name="Volubilis" x="61" y="903" type="distant"/>
+        <city name="Byzantium" x="1380" y="521" type="distant"/>
+        <city name="Alexandria" x="1508" y="929" type="distant"/>
+    </cities>
+    <invasion_paths>
+        <path>
+            <battle x="1770" y="910"/>
+            <battle x="1803" y="907"/>
+            <battle x="1856" y="911"/>
+        </path>
+        <path>
+            <battle x="1784" y="912"/>
+            <battle x="1811" y="924"/>
+            <battle x="1889" y="936"/>
+        </path>
+    </invasion_paths>
+    <distant_battle_paths>
+        <path type="roman" start_x="1692" start_y="902">
+            <waypoint num_months="7" x="1697" y="770"/>
+            <waypoint num_months="1" x="1705" y="740"/>
+            <waypoint num_months="1" x="1657" y="750"/>
+            <waypoint num_months="1" x="1657" y="732"/>
+        </path>
+        <path type="enemy" start_x="1814" start_y="740">
+            <waypoint num_months="4" x="1780" y="750"/>
+            <waypoint num_months="4" x="1730" y="730"/>
+            <waypoint num_months="4" x="1700" y="720"/>
+            <waypoint num_months="1" x="1657" y="732"/>
+        </path>
+    </distant_battle_paths>
+</empire>

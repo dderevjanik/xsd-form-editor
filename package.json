@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jsonix": "^3.0.0",
+    "jsonix-schema-compiler": "^2.3.9"
+  }
+}
