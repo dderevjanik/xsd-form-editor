@@ -1,3 +1,3 @@
 # XSD-FORM-EDITOR
 
-`xsltproc -o indexz.html xsd2html2xml.xsl ./empires.xsd`
+`xsltproc -o empire.html ./bin/xsd2html2xml/xsd2html2xml.xsl ./empire.xsd`
