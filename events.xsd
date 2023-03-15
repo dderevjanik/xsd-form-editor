@@ -62,7 +62,13 @@
                 </xs:element>
             </xs:sequence>
             <!-- Events Params -->
-            <xs:attribute name="version" type="xs:int" default="1"/>
+            <xs:attribute name="version" type="xs:int" default="1">
+                <xs:annotation>
+                    <xs:appinfo source="https://github.com/MichielCM/xsd2html2xml">
+                        <class>hidden</class>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:attribute>
         </xs:complexType>
     </xs:element>
     <!-- Types -->

@@ -62,6 +62,9 @@
             </xs:sequence>
             <xs:attribute name="version" type="xs:int" default="1">
                 <xs:annotation>
+                    <xs:appinfo source="https://github.com/MichielCM/xsd2html2xml">
+                        <class>hidden</class>
+                    </xs:appinfo>
                     <xs:documentation>Empire Version</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
